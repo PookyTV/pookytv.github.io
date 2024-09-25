@@ -32,6 +32,8 @@
         }
         li {
             margin: 10px 0;
+            display: flex;
+            align-items: center;
         }
         a {
             display: inline-block;
@@ -41,9 +43,14 @@
             background-color: #007BFF;
             text-decoration: none;
             border-radius: 4px;
+            margin-left: 10px;
         }
         a:hover {
             background-color: #0056b3;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -51,9 +58,9 @@
     <div class="container">
         <h1>Rozcestník</h1>
         <ul>
-            <li><a href="https://steamcommunity.com/id/575230907/">Steam</a></li>
-            <li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpooky_tv%2F&is_from_rle">Instagram</a></li>
-            <li><a href="https://x.com/Pooky_TV?mx=2">X</a></li>
+            <li><img src="path/to/steam-icon.png" alt="Steam Icon" class="icon"><a href="https://steamcommunity.com/id/575230907/">Steam</a></li>
+            <li><img src="path/to/instagram-icon.png" alt="Instagram Icon" class="icon"><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpooky_tv%2F&is_from_rle">Instagram</a></li>
+            <li><img src="path/to/x-icon.png" alt="X Icon" class="icon"><a href="https://x.com/Pooky_TV?mx=2">X</a></li>
         </ul>
     </div>
 </body>
