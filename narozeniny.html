@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxLSSbkLcIUqAZ5yhgGaLdGm-swNIv6_H-g&s');
+            background-size: cover;
         }
         .color-change {
             animation: colorChange 5s infinite;
@@ -20,12 +22,19 @@
             75% { color: orange; }
             100% { color: purple; }
         }
+        .frame {
+            border: 5px solid black;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <h1 class="color-change">Pozvánka na oslavu narozenin</h1>
-    <p class="color-change">Srdečně vás zveme na oslavu narozenin, která se bude konat 23. září 2024 v Odoleně Vodě.</p>
-    <p class="color-change">Jídlo i pití je zajištěno.</p>
+    <div class="frame">
+        <h1 class="color-change">Pozvánka na oslavu narozenin</h1>
+        <p class="color-change">Srdečně vás zveme na oslavu narozenin, která se bude konat 23. září 2024 v Odoleně Vodě.</p>
+        <p class="color-change">Jídlo i pití je zajištěno.</p>
+    </div>
 </body>
 </html>
-
