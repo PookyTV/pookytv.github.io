@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pozvánka na oslavu narozenin</title>
     <style>
+        @font-face {
+            font-family: 'Abadi';
+            src: url('https://example.com/path-to-abadi-font.woff2') format('woff2');
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Abadi', Arial, sans-serif;
             text-align: center;
             margin: 50px;
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxLSSbkLcIUqAZ5yhgGaLdGm-swNIv6_H-g&s');
@@ -28,6 +32,16 @@
             background-color: rgba(255, 255, 255, 0.8);
             display: inline-block;
         }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +49,32 @@
         <h1 class="color-change">Pozvánka na oslavu narozenin</h1>
         <p class="color-change">Srdečně vás zveme na oslavu narozenin, která se bude konat 23. září 2024 v Odoleně Vodě.</p>
         <p class="color-change">Jídlo i pití je zajištěno.</p>
+        <table>
+            <tr>
+                <th>Jména pozvaných</th>
+            </tr>
+            <tr>
+                <td>Rudolf</td>
+            </tr>
+            <tr>
+                <td>Lukáš</td>
+            </tr>
+            <tr>
+                <td>Matěj</td>
+            </tr>
+            <tr>
+                <td>Martin</td>
+            </tr>
+            <tr>
+                <td>Jakub</td>
+            </tr>
+            <tr>
+                <td>Tobias</td>
+            </tr>
+            <tr>
+                <td>Ondřej</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
