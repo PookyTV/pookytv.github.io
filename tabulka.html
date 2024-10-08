@@ -5,88 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISO/OSI Model</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url('https://cz.sindathermal.com/Content/uploads/2022828195/20220221204056980d79fa479048fcb0b2df4d12699f76.jpg');
-            background-size: cover;
-            background-position: center;
-        }
         table {
-            width: 50%;
+            width: 100%;
             border-collapse: collapse;
-            text-align: center;
-            font-size: 24px; /* Zvýšená velikost textu */
-            animation: rainbow 5s infinite; /* Animace měnící barvu textu */
         }
         th, td {
-            border: 1px solid #000;
+            border: 1px solid black;
             padding: 8px;
+            text-align: left;
         }
         th {
             background-color: #f2f2f2;
         }
-        @keyframes rainbow {
-            0% { color: red; }
-            14% { color: orange; }
-            28% { color: yellow; }
-            42% { color: green; }
-            57% { color: blue; }
-            71% { color: indigo; }
-            85% { color: violet; }
-            100% { color: red; }
-        }
     </style>
 </head>
 <body>
+    <h1>ISO/OSI Model</h1>
     <table>
-        <thead>
-            <tr>
-                <th>Vrstva</th>
-                <th>Číslo vrstvy</th>
-                <th>Popis</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fyzická vrstva</td>
-                <td>1</td>
-                <td>Přenáší surová data přes fyzické médium</td>
-            </tr>
-            <tr>
-                <td>Spojová vrstva</td>
-                <td>2</td>
-                <td>Zajišťuje bezchybné přenosy datových rámců</td>
-            </tr>
-            <tr>
-                <td>Síťová vrstva</td>
-                <td>3</td>
-                <td>Řídí směrování datových paketů</td>
-            </tr>
-            <tr>
-                <td>Transportní vrstva</td>
-                <td>4</td>
-                <td>Zajišťuje spolehlivý přenos dat mezi uzly</td>
-            </tr>
-            <tr>
-                <td>Relační vrstva</td>
-                <td>5</td>
-                <td>Řídí relace mezi aplikacemi</td>
-            </tr>
-            <tr>
-                <td>Prezentační vrstva</td>
-                <td>6</td>
-                <td>Převádí data do formátu srozumitelného aplikacím</td>
-            </tr>
-            <tr>
-                <td>Aplikační vrstva</td>
-                <td>7</td>
-                <td>Poskytuje síťové služby koncovým uživatelům</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>Číslo vrstvy</th>
+            <th>Název vrstvy</th>
+            <th>Funkce</th>
+            <th>Zařízení</th>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Aplikační vrstva</td>
+            <td>Poskytuje síťové služby aplikacím</td>
+            <td>Webové prohlížeče, e-mailové klienty</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Prezentační vrstva</td>
+            <td>Převádí data do formátu srozumitelného pro aplikační vrstvu</td>
+            <td>Šifrovací zařízení</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Relační vrstva</td>
+            <td>Spravuje a udržuje spojení mezi aplikacemi</td>
+            <td>Gateway</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Transportní vrstva</td>
+            <td>Zajišťuje spolehlivý přenos dat</td>
+            <td>Routery</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Síťová vrstva</td>
+            <td>Směruje pakety mezi sítěmi</td>
+            <td>Routery</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vrstva datového spojení</td>
+            <td>Poskytuje spolehlivý přenos dat přes fyzickou vrstvu</td>
+            <td>Switch, Bridge</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fyzická vrstva</td>
+            <td>Přenáší surová data přes fyzické médium</td>
+            <td>Kabely, Huby</td>
+        </tr>
     </table>
 </body>
 </html>
