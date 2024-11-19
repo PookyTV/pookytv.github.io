@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulář</title>
+    <title>Přihlášení</title>
 </head>
 <body>
-    <h1> zadej </h1>
-    <form action="/submit_form" method="post">
-        <label for="name">Jméno:</label>
-        <input type="text" id="name" name="name" value="">
-
-        <br>
-
-
-           <label for="name">heslo:</label>
-        <input type="password" id="name" name="name" value="">
-
-        <br>
-
-
-           <label for="name">heslo:</label>
-        <input type="password" id="name" name="name" checkobx="">
+    <form action="přihlásit.php" method="post">
+        <label for="username">Jméno:</label>
+        <input type="text" id="username" name="username" required><br><br>
         
-        <br>
-
-
-           <label for="name">heslo:</label>
-        <input type="password" id="name" name="name" chekcol="">
-
-
-  
-
+        <label for="password">Heslo:</label>
+        <input type="password" id="password" name="password" required><br><br>
         
+        <input type="checkbox" id="registered" name="registered">
+        <label for="registered">Jsem registrovaný uživatel</label><br><br>
+        
+        <input type="submit" value="Přihlásit">
     </form>
 </body>
 </html>
-
