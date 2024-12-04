@@ -1,18 +1,13 @@
-/* CSS stylování */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.rectangle {
-  width: 200px;  /* Šířka obdélníku */
-  height: 100px; /* Výška obdélníku */
-  background-color: #4CAF50; /* Barva pozadí obdélníku */
-  border: 2px solid #000; /* Ohraníčení obdélníku */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff; /* Barva textu */
-}
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obdélník v CSS</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Odkaz na externí CSS soubor -->
+</head>
+<body>
+  <div class="container">
+    <p class="rectangle">Toto je obdélník vytvořený pomocí CSS.</p>
+  </div>
+</body>
+</html>
