@@ -1,1 +1,22 @@
-p 
+p {
+    color: green;
+    background-color: red;
+    font-family: helvetica;
+    font-size: 22;
+    height: 100;
+    width: 200;
+    top: 150;
+    left: 250;
+}
+
+.odst {
+    color: red;
+    background-color: red;
+    font-family: helvetica;
+    font-size: 22;
+    height: 100;
+    width: 200;
+    top: 150;
+    left: 250;
+    position: absolute;
+}
