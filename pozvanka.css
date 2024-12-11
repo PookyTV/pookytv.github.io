@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fcz%2Fvector%2Fbirthday-celebration-with-balloon-and-ribbon-44815497.html&psig=AOvVaw1jVPMvLYLh_bgdDURwZ6dH&ust=1733989128492000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCUi4Obn4oDFQAAAAAdAAAAABAE'); /* Nahraď tento odkaz URL tvého obrázku */
+    background-image: url('https://depositphotos.com/vector/birthday-celebration-with-balloon-and-ribbon-44815497.html'); /* Nahraď tento odkaz URL tvého obrázku */
     background-size: cover;
     background-position: center;
 }
