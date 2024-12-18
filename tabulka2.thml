@@ -1,1 +1,72 @@
-
+  <!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO/OSI Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5">ISO/OSI Model</th>
+        </tr>
+        <tr>
+            <th>Číslo vrstvy</th>
+            <th>Název vrstvy</th>
+            <th>Funkce</th>
+            <th>Zařízení</th>
+            <th>Co přenáší</th>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Aplikační vrstva</td>
+            <td>Poskytuje síťové služby aplikacím</td>
+            <td>Webové prohlížeče, e-mailové klienty</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Prezentační vrstva</td>
+            <td>Převádí data do formátu srozumitelného pro aplikační vrstvu</td>
+            <td>Šifrovací zařízení</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Relační vrstva</td>
+            <td>Spravuje a udržuje spojení mezi aplikacemi</td>
+            <td>Gateway</td>
+            <td>Data</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Transportní vrstva</td>
+            <td>Zajišťuje spolehlivý přenos dat</td>
+            <td>Routery</td>
+            <td>Segmenty</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Síťová vrstva</td>
+            <td>Směruje pakety mezi sítěmi</td>
+            <td>Routery</td>
+            <td>Pakety</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vrstva datového spojení</td>
+            <td>Poskytuje spolehlivý přenos dat přes fyzickou vrstvu</td>
+            <td>Switch, Bridge</td>
+            <td>Rámce</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fyzická vrstva</td>
+            <td>Přenáší surová data přes fyzické médium</td>
+            <td>Kabely, Huby</td>
+            <td>Bity</td>
+        </tr>
+    </table>
+</body>
+</html>
