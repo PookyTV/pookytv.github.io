@@ -10,16 +10,20 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.myDiv {
-  border: 5px outset red;
-  background-color: lightblue;
-  text-align: center;
-    
 .container {
     width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    overflow-x: auto;
 }
 
 table {
@@ -28,7 +32,7 @@ table {
 }
 
 th, td {
-    border: 3px solid black;
+    border: 1px solid black;
     padding: 8px;
     text-align: left;
 }
