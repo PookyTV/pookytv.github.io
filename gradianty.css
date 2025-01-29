@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #0000ff, #87CEEB);
+    background: linear-gradient(to right, #FFFF00, #0000FF);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +34,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
