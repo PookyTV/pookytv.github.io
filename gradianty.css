@@ -1,45 +1,30 @@
 body {
-
     font-family: Arial, sans-serif;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     height: 100vh;
-
     margin: 0;
-
     background-color: #f0f0f0;
-
 }
- 
+
 .gradient-box {
-
     width: 300px;
-
     height: 200px;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
-    background-image: linear-gradient(to right, #ff7e5f, #feb47b), linear-gradient(to left, #6a11cb, #2575fc);
-
+    background-image: 
+        linear-gradient(to top right, #ff7e5f, #feb47b),
+        linear-gradient(to top left, #6a11cb, #2575fc),
+        linear-gradient(to bottom right, #ff7e5f, #feb47b),
+        linear-gradient(to bottom left, #6a11cb, #2575fc);
     background-blend-mode: overlay;
-
+    background-size: 50% 50%;
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
     color: white;
-
     font-size: 18px;
-
     border-radius: 10px;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
-
- 
