@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #FFFF00, #FF0000);
+    background-image: linear-gradient(to right, #0000FF, #FFFF00);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ p {
 }
 
 a {
-    color: #FF0000;
+    color: #0000FF;
     text-decoration: none;
 }
 
