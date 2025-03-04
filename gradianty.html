@@ -1,14 +1,32 @@
-<!DOCTYPE html>
-<html lang="cs">
+
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Double Gradient Example</title>
-<link rel="stylesheet" href="gradianty.css">
+    <style>
+        #grad1 {
+            width: 1000px;
+            height: 200px;
+            background-image: linear-gradient(to bottom right, green, brown, red, orange, yellow);
+        }
+
+        #grad2 {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+            background-image: radial-gradient(blue 10%, yellow 30%, red 80%);
+        }
+
+        #grad3 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: conic-gradient(at 60% 50%, blue, yellow, green);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>gradienty</title>
 </head>
 <body>
-<div class="gradient-box">
-
-</div>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
 </body>
-</html>
