@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.corner-image {
+  position: absolute;
+  width: 50px; 
+  height: 50px;
+}
+
+.topright {
+  top: 8px;
+  right: 8px;
+}
+
+.bottomright {
+  bottom: 8px;
+  right: 8px;
+}
+
+.center-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: green;
+}
+
+.center-text-2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: green;
+}
+
+img.background {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="img_5terre_wide.jpg" alt="Cinque Terre" class="background">
+  <img src="icon1.png" class="corner-image topright">
+  <img src="icon2.png" class="corner-image bottomright">
+  <div class="center-text">STŘED</div>
+  <div class="center-text-2">STŘED 2.0</div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.corner-image {
+  position: absolute;
+  width: 50px; 
+  height: 50px;
+}
+
+.topright {
+  top: 8px;
+  right: 8px;
+}
+
+.bottomright {
+  bottom: 8px;
+  right: 8px;
+}
+
+.center-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: green;
+}
+
+.center-text-2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: green;
+}
+
+img.background {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img src="img_5terre_wide.jpg" alt="Cinque Terre" class="background">
+  <img src="icon1.png" class="corner-image topright">
+  <img src="icon2.png" class="corner-image bottomright">
+  <div class="center-text">STŘED</div>
+  <div class="center-text-2">STŘED 2.0</div>
+</div>
+
+</body>
+</html>
