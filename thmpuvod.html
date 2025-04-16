@@ -11,29 +11,34 @@
       background-size: top;
       background-position: top;
       color: white;
+      text-align: center;
     }
 
     .top-bar {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: space-between; /* Zarovnání obsahu na opačné strany */
+      align-items: center;
       padding: 20px;
     }
 
     .logo {
       display: flex;
       flex-direction: column;
+      align-items: flex-start; /* Zarovnání loga vlevo */
     }
 
     .top-buttons {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      align-items: flex-end; /* Zarovnání tlačítek vpravo */
     }
 
-    .top-buttons button {
-      background-color: #0e5c77;
-      color: white;
+    .top-buttons button,
+    .menu-item,
+    .login-form button {
+      background: linear-gradient(to bottom right, #ffffff, #262626); /* Upravený gradient */
+      color: #333;
       padding: 10px 20px;
       border: none;
       border-radius: 10px;
@@ -41,7 +46,11 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s ease;
     }
 
     .top-buttons img {
@@ -56,30 +65,31 @@
     }
 
     .menu-item {
-      background-color: #0e5c77;
       padding: 50px 30px;
       border-radius: 5px;
       text-align: center;
       width: 200px;
       font-size: 18px;
       font-weight: bold;
-      cursor: pointer;
     }
 
-    .menu-item:hover {
-      background-color: #147a9d;
+    .menu-item:hover,
+    .top-buttons button:hover,
+    .login-form button:hover {
+      background: linear-gradient(to bottom right, #ffffff, #262626); /* Upravený gradient */
     }
 
-    /* Přihlašovací formulář */
     .login-form {
       position: absolute;
       top: 80px;
-      right: 20px;
-      background-color: rgba(0, 0, 0, 0.5); /* průhlednost 50% */
+      right: 50%;
+      transform: translateX(50%);
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 20px;
       border-radius: 10px;
       display: none;
       width: 250px;
+      text-align: center;
     }
 
     .login-form input[type="email"],
@@ -98,22 +108,15 @@
     .login-form .actions {
       margin-top: 10px;
       display: flex;
-      justify-content: space-between;
-    }
-
-    .login-form button {
-      background-color: #0e5c77;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      cursor: pointer;
+      justify-content: center;
+      gap: 10px;
     }
 
     .checkbox {
       margin-top: 10px;
       display: flex;
       align-items: center;
+      justify-content: center;
       font-size: 14px;
     }
   </style>
@@ -138,7 +141,7 @@
     <h3>Přihlášení / Registrace</h3>
     <input type="email" placeholder="E-mail">
     <input type="password" placeholder="Heslo">
-    
+
     <div class="checkbox">
       <input type="checkbox" id="stayLoggedIn">
       <label for="stayLoggedIn">&nbsp;Zůstat přihlášen</label>
@@ -166,3 +169,4 @@
 
 </body>
 </html>
+
