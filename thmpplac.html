@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('path/to/background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.9; /* Nastavení průhlednosti pozadí */
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.8); /* Poloprůhledné pozadí pro obsah */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .payment-methods img {
+            width: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .thmp-logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 120px; /* Zvětšení loga */
+        }
+        .credits {
+            margin-top: 20px;
+        }
+        .credits button {
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .credits button:hover {
+            background-color: #0056b3;
+        }
 
+        .packages {
+            margin: 20px 0;
+        }
+        .packages button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .packages button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo THMP -->
+    <img class="thmp-logo" src="https://www.satalice.cz/sites/default/files/rucne_vkladane/thmp-logo-barva.png" alt="THMP Logo">
+
+    <div class="container">
+        <h1>Zaplaťte jednoduše</h1>
+        <div class="packages">
+            <h2>Vyberte balíček:</h2>
+            <button onclick="updateQRCode(60)">60 minut</button>
+            <button onclick="updateQRCode(120)">120 minut</button>
+            <button onclick="updateQRCode(180)">180 minut</button>
+        </div>
+        <div class="qr-code">
+            <img id="qrCode" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=default" alt="QR kód">
+        </div>
+        <div class="payment-methods">
+            <h2>Vyberte platební metodu:</h2>
+            <a href="https://www.visa.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            </a>
+            <a href="https://www.mastercard.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard">
+            </a>
+            <a href="https://www.paypal.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+            </a>
+        </div>
+        <div class="credits">
+            <h2>Režim zaplacení kredity:</h2>
+            <button onclick="alert('Platba kredity není momentálně dostupná.')">Zaplatit kredity</button>
+        </div>
+    </div>
+    <script>
+        // Funkce pro aktualizaci QR kódu podle zvoleného balíčku
+        function updateQRCode(minutes) {
+            const qrCode = document.getElementById('qrCode');
+            qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Balíček: ${minutes} minut`;
+        }
+    </script>
+</body>
+</html>
